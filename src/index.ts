@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/", redirect)
 app.use("/api", router);
 
-let port : any = 3000;
+let port : any = process.env.PORT;
 if(!process.env.PORT === undefined){
   port = process.env.PORT
 }
