@@ -11,7 +11,7 @@ IPFS Host is a simple Node.js application that will run on your server. It will 
 
 ###  Concept
 
-> We are using 2 ways to connect to IPFS
+> It is using 2 ways to connect to IPFS
 
 1.  < Your Domain > -> IPFS Host ->IPFS Gateway -> IPNS -> IPFS Content
 
