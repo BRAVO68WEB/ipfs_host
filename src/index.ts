@@ -18,7 +18,7 @@ app.use("/", redirect)
 app.use("/api", router);
 
 let port : any = 3000;
-if(process.env.PORT === undefined){
+if(!process.env.PORT === undefined){
   port = process.env.PORT
 }
 
