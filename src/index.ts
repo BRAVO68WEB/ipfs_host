@@ -17,10 +17,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/", redirect)
 app.use("/api", router);
 
-app.listen(3000, async () => {
+let port : any = 3000;
+if(process.env.PORT === undefined){
+  port = process.env.PORT
+}
+
+app.listen(port,"0.0.0.0", async () => {
   await preCheck()
   console.log("\n")
-
-  console.log('Server is running on port 3000');
+  console.log('Server is running on port http://%s:%s', "localhost", port);
 })
 
