@@ -3,7 +3,8 @@ import addToIPNS from "../controllers/addToIPNS";
 
 const router = Router();
 
-router.post("/add", addToIPNS)
+console.log("[W.I.P] Loaded IPNS routes")
+
+router.post("/publish", addToIPNS)
 
 export default router;
-
